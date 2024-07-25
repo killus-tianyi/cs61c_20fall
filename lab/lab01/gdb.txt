@@ -1,0 +1,9 @@
+1. set args arglist
+2. break line
+3. next
+4. step 
+5. continue
+6. print /f expr
+7. display /f expr
+8. info locals
+9. quit

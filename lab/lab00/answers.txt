@@ -1,0 +1,4 @@
+1.ls -l
+2.mov source destination
+3.chmod rwx
+4.pwd
