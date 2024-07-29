@@ -27,7 +27,6 @@ dot:
     add t2 x0 x0
     add t4 x0 x0
     add t5 x0 x0
-    ebreak
     loop_start:
         beq x0 a2 loop_end
         add t1 t0 x0
