@@ -18,6 +18,10 @@
 #     this function terminates the program with error code 37
 # =======================================================
 dot:
+    addi t0 x0 1
+    blt a2 t0 error_num
+    blt a3 t0 error_str
+    blt a4 t0 error_str
 
     add t0 x0 x0
     add t2 x0 x0
@@ -42,6 +46,15 @@ dot:
         add t0 t0 a3
         add t2 t2 a4
         addi a2 a2 -1
+        j loop_start
     loop_end:
         add a0 x0 t5
         jr ra
+    
+    error_num:
+        li a0 36
+        j exit
+
+    error_str:
+        li a0 37
+        j exit
