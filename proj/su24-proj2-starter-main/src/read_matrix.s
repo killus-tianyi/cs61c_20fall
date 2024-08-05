@@ -43,7 +43,6 @@ read_matrix:
     lw a1 0(sp)
     lw a2 4(sp)
     addi sp sp 8
-    ebreak
     # read the row/col
     addi sp sp -12
     sw a1 8(sp)
