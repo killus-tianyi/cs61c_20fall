@@ -1,25 +1,27 @@
+#ifndef IMAGELOADER_H
+#define IMAGELOADER_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
+#include <string.h>
 
 typedef struct Color 
 {
-	uint8_t R;
-	uint8_t G;
-	uint8_t B;
+    uint8_t R;
+    uint8_t G;
+    uint8_t B;
 } Color;
+
 typedef struct Image
 {
-	Color **image;
-	uint32_t rows;
-	uint32_t cols;
+    Color **image;
+    uint32_t rows;
+    uint32_t cols;
 } Image;
 
-//Loads an image from a ppm file, and converts to an Image object
 Image *readData(char *filename);
-
-//Writes an image to stdout
 void writeData(Image *image);
-
-//Frees an image and all its associated data
 void freeImage(Image *image);
+
+#endif // IMAGELOADER_H

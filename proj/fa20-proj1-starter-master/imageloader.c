@@ -14,10 +14,6 @@
 **
 **************************************************************************/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <inttypes.h>
-#include <string.h>
 #include "imageloader.h"
 
 //Opens a .ppm P3 image file, and constructs an Image object. 
